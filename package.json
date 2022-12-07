@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ViktorPiros/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/ViktorPiros/frontend-project-44#readme"
+  "homepage": "https://github.com/ViktorPiros/frontend-project-44#readme",
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-plugin-react": "^7.31.11"
+  }
 }

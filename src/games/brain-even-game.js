@@ -1,5 +1,10 @@
 import readlineSync from 'readline-sync';
 import getRandomIntInclusive from '../utils/randomNumber.js';
+import getUserName from '../cli.js';
+
+console.log('Welcome to the Brain Games!');
+const userName = getUserName();
+console.log(`Hello, ${userName}!`);
 
 function rightAnswerParity(number) {
   const rightAnswer = number % 2 === 0 ? 'yes' : 'no';
@@ -19,5 +24,4 @@ function even() {
     console.log('Baka');
   }
 }
-
-even();
+export default even;

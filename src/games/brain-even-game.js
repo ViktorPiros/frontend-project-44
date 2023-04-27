@@ -13,15 +13,17 @@ function rightAnswerParity(number) {
 
 function even() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  const numb = getRandomIntInclusive();
-  console.log(`Question: ${numb}`);
+  for (let i = 0; i < 3; i += 1) {
+    const numb = getRandomIntInclusive();
+    console.log(`Question: ${numb}`);
 
-  const correctAnswer = rightAnswerParity(numb);
-  const usrAnswer = readlineSync.question('Your answer: ');
-  if (usrAnswer === correctAnswer) {
-    console.log('Correct');
-  } else {
-    console.log('Baka');
+    const correctAnswer = rightAnswerParity(numb);
+    const usrAnswer = readlineSync.question('Your answer: ');
+    if (usrAnswer === correctAnswer) {
+      console.log('Correct');
+    } else {
+      console.log('Baka');
+    }
   }
 }
 export default even;

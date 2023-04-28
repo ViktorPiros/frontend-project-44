@@ -22,7 +22,7 @@ function even() {
     if (usrAnswer === correctAnswer) {
       console.log('Correct');
     } else {
-      console.log('Baka');
+      console.log(`${usrAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
     }
   }
 }

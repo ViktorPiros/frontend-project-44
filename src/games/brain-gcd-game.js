@@ -15,15 +15,17 @@ function rightAnswerGCD(a, b) {
 
 const gcdGame = () => {
   console.log('Find the greatest common divisor of given numbers.');
-  const numb1 = getRandomIntInclusive();
-  const numb2 = getRandomIntInclusive();
-  console.log(`Question: ${numb1} ${numb2}`);
-  const correctAnswer = rightAnswerGCD(numb1, numb2);
-  const usrAnswer = readlineSync.question('Your answer: ');
-  if (usrAnswer === String(correctAnswer)) {
-    console.log('Correct');
-  } else {
-    console.log(`${usrAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+  for (let i = 0; i < 3; i += 1) {
+    const numb1 = getRandomIntInclusive();
+    const numb2 = getRandomIntInclusive();
+    console.log(`Question: ${numb1} ${numb2}`);
+    const correctAnswer = rightAnswerGCD(numb1, numb2);
+    const usrAnswer = readlineSync.question('Your answer: ');
+    if (usrAnswer === String(correctAnswer)) {
+      console.log('Correct');
+    } else {
+      console.log(`${usrAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+    }
   }
 };
 gcdGame();

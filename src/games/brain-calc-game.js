@@ -1,10 +1,8 @@
 import readlineSync from 'readline-sync';
 import getRandomIntInclusive from '../utils/randomNumber.js';
-import getUserName from '../cli.js';
+import usrName from '../utils/logic.js';
 
-console.log('Welcome to the Brain Games!');
-const userName = getUserName();
-console.log(`Hello, ${userName}!`);
+usrName();
 
 function rightAnswerSum(number1, number2) {
   const rightAnswer = number1 + number2;
@@ -24,8 +22,8 @@ function rightAnswerDifference(number1, number2) {
 function calc() {
   function calcSum() {
     console.log('What is the result of the expression?');
-    const numb1 = getRandomIntInclusive();
-    const numb2 = getRandomIntInclusive();
+    const numb1 = getRandomIntInclusive(10);
+    const numb2 = getRandomIntInclusive(10);
     console.log(`Question: ${numb1} + ${numb2}`);
     const correctAnswerSum = rightAnswerSum(numb1, numb2);
     const usrAnswer = readlineSync.question('Your answer: ');
@@ -37,9 +35,9 @@ function calc() {
   }
   calcSum();
 
-  function calcProduct() {
-    const numb1 = getRandomIntInclusive();
-    const numb2 = getRandomIntInclusive();
+  function calcWork() {
+    const numb1 = getRandomIntInclusive(10);
+    const numb2 = getRandomIntInclusive(10);
     console.log(`Question: ${numb1} * ${numb2}`);
     const correctAnswerProduct = rightAnswerProduct(numb1, numb2);
     const usrAnswer = readlineSync.question('Your answer: ');
@@ -49,11 +47,11 @@ function calc() {
       console.log(`${usrAnswer} is wrong answer ;(. Correct answer was ${correctAnswerProduct}`);
     }
   }
-  calcProduct();
+  calcWork();
 
   function calcDifference() {
-    const numb1 = getRandomIntInclusive();
-    const numb2 = getRandomIntInclusive();
+    const numb1 = getRandomIntInclusive(10);
+    const numb2 = getRandomIntInclusive(10);
     console.log(`Question: ${numb1} - ${numb2}`);
     const correctAnswerDifference = rightAnswerDifference(numb1, numb2);
     const usrAnswer = readlineSync.question('Your answer: ');
@@ -62,8 +60,8 @@ function calc() {
     } else {
       console.log(`${usrAnswer} is wrong answer ;(. Correct answer was ${correctAnswerDifference}`);
     }
+    console.log(`Congratulations,${usrName}`);
   }
   calcDifference();
 }
-calc();
 export default calc;

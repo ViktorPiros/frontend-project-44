@@ -7,16 +7,15 @@ function rightAnswerGCD(a, b) {
   }
   return rightAnswerGCD(b, a % b);
 }
-const description = 'Find the greatest common divisor of given numbers.';
+const description = ('Find the greatest common divisor of given numbers.');
 const game = () => {
     const numb1 = getRandomIntInclusive();
     const numb2 = getRandomIntInclusive();
-    const question = `${numb1} ${numb2}`;
-    const answer = rightAnswerGCD(numb1, numb2);
-  return [question, answer];
+    const correctAnswer = rightAnswerGCD(numb1, numb2);
+    return [`${numb1} ${numb2}`, correctAnswer];
 };
 const start = () => {
-  startGame(description, game());
+  startGame(description, game);
 }
 
 export default start;

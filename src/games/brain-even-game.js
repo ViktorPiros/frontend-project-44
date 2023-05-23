@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import getRandomIntInclusive from '../utils/randomNumber.js';
 import usrName from '../utils/logic.js';
 import startGame from '../utils/logic.js';

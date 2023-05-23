@@ -6,9 +6,11 @@ function startGame() {
   console.log('Welcome to the Brain Games!');
   const userName = getUserName();
   console.log(`Hello, ${userName}!`);
+  let description
   console.log(description);
   for (let i = 0; i < 3; i += 1) {
-    const dataGame = game();
+    let dataGame
+    dataGame = game();
     const question = dataGame[0];
     const answer = dataGame[1];
     console.log(`Question: ${question}`);
@@ -20,7 +22,7 @@ function startGame() {
       return;
     }
     console.log(`Congratulations, ${userName}!`);
-  }
 }
+};
 
 export default startGame;

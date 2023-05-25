@@ -3,7 +3,7 @@ import startGame from '../utils/logic.js';
 
 function rightAnswerProgression(number, step, length) {
   const line = [];
-  for (let i = 0; i < length; i += 1) {
+  for (let i = 0; i < length + 1; i += 1) {
     const element = number + (step * i);
     line.push(element);
   }
@@ -13,7 +13,7 @@ function rightAnswerProgression(number, step, length) {
 const description = ('What number is missing in the progression?');
 const game = () => {
   const length = getRandomIntInclusive(5, 10);
-  const index = getRandomIntInclusive(1, 5);
+  const index = getRandomIntInclusive(0, 4);
   const step = getRandomIntInclusive(1, 10);
   const number = getRandomIntInclusive(2, 20);
   const line = rightAnswerProgression(number, step, length);

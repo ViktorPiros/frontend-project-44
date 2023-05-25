@@ -11,7 +11,7 @@ const isPrime = (num) => {
 };
 
 const game = () => {
-  const numb = getRandomIntInclusive();
+  const numb = getRandomIntInclusive(2, 100);
   const correctAnswer = isPrime(numb) ? 'yes' : 'no';
   return [numb, correctAnswer];
 };

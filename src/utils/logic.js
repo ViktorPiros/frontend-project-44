@@ -5,6 +5,7 @@ import getUserName from '../cli.js';
 const startGame = (description, game) => {
   console.log('Welcome to the Brain Games!');
   const userName = getUserName();
+  console.log(`Hello, ${userName}!`);
   console.log(description);
   for (let i = 0; i < 3; i += 1) {
     const [number, answer] = game();

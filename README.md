@@ -35,6 +35,7 @@ This is not really a game, but you can type in terminal your name and game will 
  
 ### Example 
 
+<a href="https://asciinema.org/a/TEJSIThEpi2zPb1czdRnSpJvc" target="_blank"><img src="https://asciinema.org/a/TEJSIThEpi2zPb1czdRnSpJvc.svg" /></a>
 
 ### brain-even 
  
@@ -42,6 +43,7 @@ This game task you next. You need to answer "yes" if the number is even, otherwi
 
 ### Example
 
+<a href="https://asciinema.org/a/UGnU7Mm9LYELR2FgztFTXfkM4" target="_blank"><img src="https://asciinema.org/a/UGnU7Mm9LYELR2FgztFTXfkM4.svg" /></a>
 
 ### brain-calc 
  
@@ -49,6 +51,7 @@ This game task you next. You need to get result of the expression.
  
 ### Example 
 
+<a href="https://asciinema.org/a/LwBroPHMTgGiaR8evXflTjDxx" target="_blank"><img src="https://asciinema.org/a/LwBroPHMTgGiaR8evXflTjDxx.svg" /></a>
 
 ### brain-gcd 
  
@@ -56,6 +59,7 @@ This game task you next. You need to find GCD of two numbers.
  
 ### Example 
 
+<a href="https://asciinema.org/a/Hjt0lYLW2lyXaZj9dG3H7ipUn" target="_blank"><img src="https://asciinema.org/a/Hjt0lYLW2lyXaZj9dG3H7ipUn.svg" /></a>
 
 ### brain-progression 
  
@@ -63,6 +67,7 @@ This game task you next. You will see a arifmetic progression and you need to fi
  
 ### Example 
 
+<a href="https://asciinema.org/a/ATGRxdcREDn0gapOb33XAokXS" target="_blank"><img src="https://asciinema.org/a/ATGRxdcREDn0gapOb33XAokXS.svg" /></a>
 
 ### brain-prime 
  
@@ -70,5 +75,6 @@ This game task you next. You need to answer "yes" if given number is prime. Othe
  
 ### Example 
  
+ <a href="https://asciinema.org/a/poUlwMV8SCoSQxgghN8cHZZgx" target="_blank"><img src="https://asciinema.org/a/poUlwMV8SCoSQxgghN8cHZZgx.svg" /></a>
 
 ### Thanks for playing <3!
